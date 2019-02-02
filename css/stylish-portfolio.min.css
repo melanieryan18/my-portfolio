@@ -5,6 +5,8 @@
  */body,html{width:100%;height:100%}
  body{font-family:'Source Sans Pro'}
  .btn-xl{padding:1.25rem 2.5rem}
+ .white {color:white;}
+ .overlay {background-color:#1d809f;}
  .content-section{padding-top:7.5rem;padding-bottom:7.5rem}
  .content-section-heading h2{font-size:3rem}
  .content-section-heading h3{font-size:1rem;text-transform:uppercase}
