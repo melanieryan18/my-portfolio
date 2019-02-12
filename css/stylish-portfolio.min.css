@@ -6,8 +6,9 @@
  body{font-family:'Source Sans Pro'}
 
 .me-shot {
- height: 95%;
+ width: 95%;
 }
+
 
 .disflex {
    display: flex;
