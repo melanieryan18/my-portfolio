@@ -8,22 +8,21 @@
     <!-- <meta name="description" content="">
     <meta name="author" content=""> -->
     <link rel="icon" href="img/headshot-fav.png">
-    <title>Melanie Ryan | Full Stack Developer</title>
+    <title>Full Stack Development | Melanie Ryan</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <!-- Custom Fonts -->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <script src="https://kit.fontawesome.com/28f91eb365.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic"
         rel="stylesheet" type="text/css">
     <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-
-
-    <!-- Custom CSS -->
     <link href="css/stylish-portfolio.min.css" rel="stylesheet">
-
+    <script src="https://kit.fontawesome.com/28f91eb365.js"></script>
 </head>
 
 <body id="page-top">
@@ -52,6 +51,9 @@
             </li>
             </li>
             <li class="sidebar-nav-item">
+                <a class="js-scroll-trigger" href="#press">Press</a>
+            </li>
+            <li class="sidebar-nav-item">
                 <a class="js-scroll-trigger" href="#footer">Contact</a>
             </li>
         </ul>
@@ -59,12 +61,13 @@
 
     <!-- Header -->
     <header class="masthead d-flex">
-        <div class="container text-center my-auto">
-            <h1 class="mb-1">Melanie Ryan</h1>
-            <h2 class="mb-4">Full Stack Web Development</h2>
-            <a class="btn btn-primary btn-xl js-scroll-trigger" href="#services">Get Started</a>
+        <div class="mt-50 container text-center js-scroll-trigger" id="title">
+            <h1 class="mb-1 white">Melanie Ryan</h1>
+            <h2 class="mb-4 white">Full Stack Web Development</h2>
+            <!-- <a class="btn btn-primary btn-xl js-scroll-trigger" href="#services">Get Started</a> -->
         </div>
         <div class="overlay"></div>
+
     </header>
 
 
@@ -80,43 +83,42 @@
             <div class="row">
                 <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
                     <span class="service-icon rounded-circle mx-auto mb-3">
-                        <i class="icon-screen-smartphone"></i>
-                    </span>
-                    <h4>
-                        <strong>UI/UX Consultation</strong>
-                    </h4>
-                    <p class="text-faded mb-0">Leverage my experience in project management and marketing, auditing
-                        websites for million dollar businesses.
-                    </p>
-                </div>
-                <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-                    <span class="service-icon rounded-circle mx-auto mb-3">
-                        <i class="icon-pencil"></i>
-                    </span>
-                    <h4>
-                        <strong>Front End</strong>
-                    </h4>
-                    <p class="text-faded mb-0">HTML, CSS, Javascript, jQuery, Bootstrap, Flexbox, React.js, and ES6
- to name a few.</p>
-                </div>
-                <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
-                    <span class="service-icon rounded-circle mx-auto mb-3">
-                        <i class="icon-pencil"></i>
-                    </span>
-                    <h4>
-                        <strong>Back End</strong>
-                    </h4>
-                    <p class="text-faded mb-0">Such as Node.js, Express.js, Mongo DB, SQL, RESTful APIs, JSON.
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <span class="service-icon rounded-circle mx-auto mb-3">
-                        <i class="icon-screen-smartphone"></i>
+                        <i class="icon-screen-desktop"></i>
                     </span>
                     <h4>
                         <strong>Full Stack Development</strong>
                     </h4>
-                    <p class="text-faded mb-0">From conceptualization to deployment & everything in between. The whole
-                        enchilada!</p>
+                    <p class="text-faded mb-0">From determing requirements, UI/UX, database design, development, to
+                        deployment
+                    </p>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+                    <span class="service-icon rounded-circle mx-auto mb-3">
+                        <i class="icon-frame"></i>
+                    </span>
+                    <h4>
+                        <strong>Front End</strong>
+                    </h4>
+                    <p class="text-faded mb-0">JavaScript, Vue.js, React.js, JSON, jQuery, Bootstrap, Flexbox</p>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
+                    <span class="service-icon rounded-circle mx-auto mb-3">
+                        <i class="icon-cloud-download"></i>
+                    </span>
+                    <h4>
+                        <strong>Back End</strong>
+                    </h4>
+                    <p class="text-faded mb-0">PHP, Node.js, Express.js, SQL, NoSQL, Redshift, API Construction
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <span class="service-icon rounded-circle mx-auto mb-3">
+                        <i class="icon-pencil"></i>
+                    </span>
+                    <h4>
+                        <strong>UI/UX</strong>
+                    </h4>
+                    <p class="text-faded mb-0">Leverage my experience in auditing
+                        websites for million dollar businesses</p>
                 </div>
             </div>
             <br><br><br>
@@ -130,7 +132,6 @@
 
 
     </section>
-
 
     <!-- Portfolio -->
     <section class="content-section" id="portfolio">
@@ -171,15 +172,16 @@
                         <span class="caption">
                             <span class="caption-content">
                                 <h2>Beauty Buddy || A MERN Stack App</h2>
-                                <p class="mb-0">Full MERN app that utilizes face recognition technology to match users
-                                    with products (in progress).</p>
+                                <p class="mb-0">Full MERN app for the beauty lover seeking to track their entire
+                                    wellness journey. In progress.</p>
                             </span>
                         </span>
                         <img class="img-fluid overlay" src="img/beauty-buddy-1.png" alt="">
                     </a>
                 </div>
                 <div class="col-lg-6">
-                    <a class="portfolio-item" target="_blank" href="https://melanieryan18.github.io/crystal-collectors-game/">
+                    <a class="portfolio-item" target="_blank"
+                        href="https://melanieryan18.github.io/crystal-collectors-game/">
                         <span class="caption">
                             <span class="caption-content">
                                 <h2>Crystal Collector</h2>
@@ -195,38 +197,63 @@
         </div>
     </section>
 
-
-
-
     <!-- About -->
     <section class="content-section bg-primary text-white" id="about">
         <div class="container disflex">
             <div class="row ">
                 <div class="col-lg-6 mb-5 mb-lg-0">
-                    <img src="img/headshotty.jpg" class="disflex my-headshot img-fluid">
+                    <img src="img/amp-crop.jpg" class="disflex my-headshot img-fluid">
                 </div>
                 <div class="col-lg-6 mb-5 mb-lg-0 ">
                     <h2>About Me</h2>
                     <p>
-                        <p>From the time I was a child, I knew I wanted to be in software development. I remember playing computer games when I was young, peeking behind the monitor trying to figure out how characters like Carmen San Diego and the Little Mermaid were appearing on my screen. My fascination progressed and in the early years of the social media boom, I could spend hours creating and customizing blog/Xanga skins, implementing the new features on MySpace, and looking for new technology to get my hands on.  </p>
-                            <p>Now with 5 years of experience in software startups under my belt, I offer a competitive edge in the job market. In addition to my technical skills, I have marketed both B2C and B2B applications, worked cross-departmentally with Agile/SCRUM teams, and have developed the ability to manage heavy workloads in fast paced environments, pivoting at the drop of the hat. Clear communication, attention to detail, and excellent time management are the foundation of my success.</p>
-                           <p>I am currently seeking opportunities in Software Engineering & Development and am open to freelance opportunities. Click the links below to connect on LinkedIn, view my GitHub, and get in touch via email.</p>
-                            
+                        <p>I've dreamed of pursuing software development since childhood - technology has always fascinated me. I remember
+                            playing computer games when I was young, peeking behind the monitor trying to figure out how
+                            characters like Carmen San Diego were appearing on my screen. </p>
+
+                        <p>Now, with 5 years of experience in software startups under my belt, I offer a competitive
+                            edge
+                            in the job market. In addition to my technical skills, I have marketed both B2C and B2B
+                            applications, worked cross-departmentally with Agile/SCRUM teams, audited websites for
+                            million dollar businesses, and have a taste of every phase of the development lifecycle from
+                            a non-technical standpoint. I am deeply organized,
+                            highly communicative, and manage my time with ease.</p>
+
+                        <p>I currently work as a Full Stack Developer at a global biotech company, working
+                            cross-departmentally to determine requirements and develop apps for internal teams. I currently utilize Vue and vanilla JavaScript, BootStrap CSS, Axios, jQuery, PHP, SQL, and MySQL. Next on my agenda is an AWS Cloud Practioner Certification.</p>
+                        <p>
+                            I am always open to learning about new opportunities and pro bono nonprofit opportunities.
+                            Click the links below to connect on LinkedIn, view my GitHub, and get in touch via email.
+                        </p>
                     </p>
+                    <span id='press' class="press-format ">
+                        <h2 class="mt-20">Press</h2>
+                        <span>
+                            <img class="press-format" src="img/SDVoyagerlarge-2.png">
+                            <h5>Rewriting the Narrative</h5>
+                            <hr />
+                        </span>
+                    </span>
                 </div>
+
             </div>
         </div>
     </section>
 
     <!-- Callout -->
-    <!-- <section class="callout">
-    <div class="container text-center">
-      <h2 class="mx-auto mb-5">Let's get to work!</h2>
-      <a class="btn btn-primary btn-xl" href="mailto:melaniehoperyan@gmail.com">Contact Me</a>
-    </div>
-  </section> -->
-    <!-- Call to Action -->
-    <!-- <section class="content-section bg-primary text-white">
+    <!-- <section class="content-section bg-white text-white" id="press">
+        <div class="container disflex">
+            <div class="row ">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <h2 class="mx-auto mb-5">Press</h2>
+                </div>
+                <h2 class="mx-auto mb-5">djfk</h2>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Call to Action
+    <section class="content-section bg-primary text-white">
       <div class="container text-center">
         <h2 class="mb-4">The buttons below are impossible to resist...</h2>
         <a href="#" class="btn btn-xl btn-light mr-4">Click Me!</a>
@@ -240,14 +267,14 @@
         <div class="container">
             <ul class="list-inline mb-5">
                 <li class="list-inline-item">
-                    <a class="social-link rounded-circle bg-light text-dark mr-3"
-                    target="_blank" href="https://www.linkedin.com/in/melanie-ryan-79b4485b/">
+                    <a class="social-link rounded-circle bg-light text-dark mr-3" target="_blank"
+                        href="https://www.linkedin.com/in/melanie-ryan-79b4485b/">
                         <i class="icon-social-linkedin"></i>
                     </a>
                 </li>
                 <li class="list-inline-item">
-                    <a class="social-link rounded-circle bg-light text-dark mr-3"
-                    target="_blank" href="https://github.com/melanieryan18">
+                    <a class="social-link rounded-circle bg-light text-dark mr-3" target="_blank"
+                        href="https://github.com/melanieryan18">
                         <i class="icon-social-github"></i>
                     </a>
                 </li>
@@ -258,8 +285,8 @@
                     </a>
                 </li>
             </ul>
-            <p class="small text-white mb-0">Melanie Ryan<br>+1 858 218-4478 <BR> hello@melanieryandev.com <BR>Copyright
-                &copy; Melanie Ryan 2018</p>
+            <p class="small text-white mb-0">Melanie Ryan<br>hello@melanieryandev.com <BR>Copyright
+                &copy; Melanie Ryan 2019</p>
         </div>
     </footer>
 
