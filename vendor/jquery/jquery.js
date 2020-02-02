@@ -7276,7 +7276,7 @@ jQuery.speed = function( speed, easing, fn ) {
 };
 
 jQuery.fn.extend( {
-	fadeTo: function( speed, to, easing, callback ) {
+	fadeTo: function( speed ) {
 
 		// Show any hidden elements after setting opacity to 0
 		return this.filter( isHiddenWithinTree ).css( "opacity", 0 ).show()
